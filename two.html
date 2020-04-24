@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>второе задание</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>      
+<ul id="list">
+    <li>Один</li>
+    <li>Два</li>
+    <li>Три</li>
+    <li>Четыре</li>
+</ul>
+<input type="text" id="txtVal">
+<button onclick="addLi()">Добавить li</button>        
+<script>        
+function addLi(){
+    var txtVal = document.getElementById('txtVal').value,
+    listNode = document.getElementById('list'),
+    liNode = document.createElement("li"),
+    txtNode = document.createTextNode(txtVal);
+
+    liNode.appendChild(txtNode);
+    listNode.appendChild(liNode);
+    }
+    </script>
+    </body>
+</html>
